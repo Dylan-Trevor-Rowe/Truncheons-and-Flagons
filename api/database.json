@@ -1,0 +1,50 @@
+{
+    "teams": [
+        {
+            "id": "1",
+            "players": [
+                "1","2","3"
+            ],
+            "dateCreated":"",
+            "currentRole": "",
+            "gameScore": "",
+            "teamTotalScore":""
+
+        }
+    ],
+    "players": [
+        {
+            "id": "1",
+            "firstName":"Bob",
+            "lastName": "Johnson",
+            "country": "USA",
+            "team": "1"
+            
+        },
+        {
+            "id": "2",
+            "firstName":"Sam",
+            "lastName": "Johnson",
+            "country": "USA",
+            "team": "1"
+            
+        },
+        {
+            "id": "3",
+            "firstName":"George",
+            "lastName": "Johnson",
+            "country": "USA",
+            "team": "1"
+            
+        }
+    ],
+    "teamScores": [
+        {
+        "id": "1",
+        "team":"1",
+        "dateOfGame": "",
+        "teamRoundScore" : "",
+        "gameScore": ""
+        }
+    ]
+}
