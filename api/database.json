@@ -2,20 +2,31 @@
     "teams": [
         {
             "id": 1,
-            "name": "Team Name",
+            "name":"This is your team",
             "totalScore":""
-
         }
     ],
     "players": [
         {
             "id": 1,
-            "name": "Bob Johnson",
+            "name":"Bob",
             "country": "USA",
             "teamId": 1
             
+        },
+        {
+            "id": 2,
+            "name":"Peter",
+            "country": "Russia",
+            "teamId": 1
+        },
+        {
+            "id": 3,
+            "name":"Kelsey",
+            "country": "England",
+            "teamId": 1
+            
         }
-        
     ]
     
 }
