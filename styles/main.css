@@ -1,0 +1,17 @@
+.landingPage {
+  background: rgb(67, 136, 67);
+  border: solid 2px black;
+  width: 1253px;
+  height: 1200px;
+  opacity: 80%;
+}
+
+#landingButton {
+  margin-left: 460px;
+  border-radius: 10%;
+  background-color: goldenrod;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#truncheon {
+  margin-left: 460px;
+}
