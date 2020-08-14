@@ -9,6 +9,11 @@
       "id": 2,
       "name": "Trunch Time",
       "totalScore": ""
+    },
+    {
+      "name": "The Rolling Thunder",
+      "teamScore": 0,
+      "id": 3
     }
   ],
   "players": [
