@@ -2,7 +2,7 @@
     "teams": [
         {
             "id": 1,
-            "name":"",
+            "name":"This is your team",
             "totalScore":""
         }
     ],
@@ -28,4 +28,5 @@
             
         }
     ]
+    
 }
