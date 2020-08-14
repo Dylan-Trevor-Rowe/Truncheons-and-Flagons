@@ -2,13 +2,19 @@ import { getTeams, useTeams } from "../team/teamProvider.js"
 
 const eventHub = document.querySelector(".container")
 
+const scores = []
+
 export const getScores = () => {
     getTeams()
     .then(() => {
         const teams = useTeams()
-        const scores = teams.map(team => {
+        const scoresArr = teams.map(team => {
             return {totalScore: team.totalScore, teamName: team.name}
         })
-        return scores
+        scores = scoresArr
     })
+}
+
+export const useScores = () => {
+    return scores.slice()
 }
