@@ -22,12 +22,13 @@ export const getTeams = () => {
 
 
 export const saveTeam = (team) => {
+    const JTeam = JSON.stringify(team)
     return fetch("http://localhost:3000/teams", {
         method : "POST",
         headers : {
             "Content-Type" : "application/json"
         },
-        body: JSON.stringify(team)
+        body: JTeam
     })
     .then(getTeams)
     .then(dispatchTeamChange)
