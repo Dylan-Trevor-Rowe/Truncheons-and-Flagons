@@ -8,10 +8,11 @@ eventHub.addEventListener("click", clickEvent => {
 
     if(clickEvent.target.id === "createTeam") {
         const teamName = document.querySelector("#teamName")
-        console.log(teamName.value)
+        
 
         const newTeam = {
             name : teamName.value,
+            teamScore : 0,
             
         }
 
@@ -20,7 +21,7 @@ eventHub.addEventListener("click", clickEvent => {
 })
 
 const render = () => {
-    contentTarget.innerHTML += `
+    contentTarget.innerHTML = `
         <h3>Create a New Team</h3>
         <form name="teamCreationForm id="teamCreation>
             <input type="text" id="teamName" placeholder="Team Name" />
@@ -33,3 +34,8 @@ export const TeamForm = () => {
     render()
         
 }
+
+
+// import { TeamForm } from "./Forms/teamForm.js"
+// 
+// TeamForm()
