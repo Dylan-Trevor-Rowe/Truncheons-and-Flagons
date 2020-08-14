@@ -1,50 +1,31 @@
 {
     "teams": [
         {
-            "id": "1",
-            "players": [
-                "1","2","3"
-            ],
-            "dateCreated":"",
-            "currentRole": "",
-            "gameScore": "",
-            "teamTotalScore":""
-
+            "id": 1,
+            "name":"",
+            "totalScore":""
         }
     ],
     "players": [
         {
-            "id": "1",
-            "firstName":"Bob",
-            "lastName": "Johnson",
+            "id": 1,
+            "name":"Bob",
             "country": "USA",
-            "team": "1"
+            "teamId": 1
             
         },
         {
-            "id": "2",
-            "firstName":"Sam",
-            "lastName": "Johnson",
-            "country": "USA",
-            "team": "1"
-            
+            "id": 2,
+            "name":"Peter",
+            "country": "Russia",
+            "teamId": 1
         },
         {
-            "id": "3",
-            "firstName":"George",
-            "lastName": "Johnson",
-            "country": "USA",
-            "team": "1"
+            "id": 3,
+            "name":"Kelsey",
+            "country": "England",
+            "teamId": 1
             
-        }
-    ],
-    "teamScores": [
-        {
-        "id": "1",
-        "team":"1",
-        "dateOfGame": "",
-        "teamRoundScore" : "",
-        "gameScore": ""
         }
     ]
 }
