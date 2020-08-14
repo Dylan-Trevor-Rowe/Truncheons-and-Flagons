@@ -17,6 +17,7 @@ eventHub.addEventListener("click", clickEvent => {
         }
 
         saveTeam(newTeam)
+        render()
     }
 })
 
