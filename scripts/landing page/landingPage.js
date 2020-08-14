@@ -5,21 +5,25 @@ const eventHub = document.querySelector('.container')
 const contentTarget = document.querySelector('.landingPage');
 
 export const landingButton = () => {
-    contentTarget.innerHTML = 
-    `<button id="landingButton"class="landingButton">Truncheons and Flagons</button>`
-}   
+    contentTarget.innerHTML+=
+    
+        `<div>
+        <button id="landingButton"class="landingButton">Truncheons & Flagons</button>
+        <image id="truncheon" src="scripts/images/truncheons and flags.png">
+        </div>`
+}
 
-export const leaveThePage = () => { 
-eventHub.addEventListener('click', e => {
-    if (e.target.id === 'landingButton') {
-     console.log('it works') 
-        
-        contentTarget.remove()
-
-        const LandingPageStart = new CustomEvent('landingPageStart', {
+export const leaveThePage = () => {
+    eventHub.addEventListener('click', e => {
+        if (e.target.id === 'landingButton') {
            
-        })
-        eventHub.dispatchEvent(LandingPageStart);
-   } 
-})
+
+            contentTarget.remove()
+
+            const LandingPageStart = new CustomEvent('landingPageStart', {
+
+            })
+            eventHub.dispatchEvent(LandingPageStart);
+        }
+    })
 }
