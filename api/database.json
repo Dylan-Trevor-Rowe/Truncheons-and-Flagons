@@ -1,32 +1,30 @@
 {
-    "teams": [
-        {
-            "id": 1,
-            "name":"This is your team",
-            "totalScore":""
-        }
-    ],
-    "players": [
-        {
-            "id": 1,
-            "name":"Bob",
-            "country": "USA",
-            "teamId": 1
-            
-        },
-        {
-            "id": 2,
-            "name":"Peter",
-            "country": "Russia",
-            "teamId": 1
-        },
-        {
-            "id": 3,
-            "name":"Kelsey",
-            "country": "England",
-            "teamId": 1
-            
-        }
-    ]
+  "teams": [
+    {
+      "name": "TestTeam",
+      "id": 1,
+      "teamScore" : 0
+    }
     
+  ],
+  "players": [
+    {
+      "id": 1,
+      "name": "Bob",
+      "country": "USA",
+      "teamId": 1
+    },
+    {
+      "id": 2,
+      "name": "Peter",
+      "country": "Russia",
+      "teamId": 1
+    },
+    {
+      "id": 3,
+      "name": "Kelsey",
+      "country": "England",
+      "teamId": 1
+    }
+  ]
 }
