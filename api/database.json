@@ -1,10 +1,9 @@
 {
     "teams": [
         {
-            "id": "1",
+            "id": 1,
             "name":"",
-            "TotalScore":""
-
+            "totalScore":""
         }
     ],
     "players": [
@@ -20,7 +19,6 @@
             "name":"Peter",
             "country": "Russia",
             "teamId": 1
-            
         },
         {
             "id": 3,
@@ -29,6 +27,5 @@
             "teamId": 1
             
         }
-        
     ]
 }
