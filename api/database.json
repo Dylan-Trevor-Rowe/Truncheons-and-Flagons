@@ -1,32 +1,40 @@
 {
-    "teams": [
-        {
-            "id": 1,
-            "name":"This is your team",
-            "totalScore":""
-        }
-    ],
-    "players": [
-        {
-            "id": 1,
-            "name":"Bob",
-            "country": "USA",
-            "teamId": 1
-            
-        },
-        {
-            "id": 2,
-            "name":"Peter",
-            "country": "Russia",
-            "teamId": 1
-        },
-        {
-            "id": 3,
-            "name":"Kelsey",
-            "country": "England",
-            "teamId": 1
-            
-        }
-    ]
-    
+  "teams": [
+    {
+      "id": 1,
+      "name": "This is your team",
+      "totalScore": ""
+    },
+    {
+      "id": 2,
+      "name": "Trunch Time",
+      "totalScore": ""
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "name": "Bob",
+      "country": "USA",
+      "teamId": 1
+    },
+    {
+      "id": 2,
+      "name": "Peter",
+      "country": "Russia",
+      "teamId": 1
+    },
+    {
+      "id": 3,
+      "name": "Kelsey",
+      "country": "England",
+      "teamId": 1
+    },
+    {
+      "name": "Becca",
+      "country": "USA",
+      "teamId": 2,
+      "id": 4
+    }
+  ]
 }
