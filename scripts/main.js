@@ -2,4 +2,10 @@ import {playerForm} from "./player/createPlayerForm.js"
 
 playerForm()
 
-console.log('hello world')
+
+
+
+import { leaveThePage, landingButton } from './landing page/landingPage.js'
+
+ landingButton();
+ leaveThePage();
