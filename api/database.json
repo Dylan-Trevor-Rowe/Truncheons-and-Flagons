@@ -1,5 +1,10 @@
 {
   "teams": [
+    {
+      "name": "TestTeam",
+      "id": 1,
+      "teamScore" : 0
+    }
     
   ],
   "players": [
