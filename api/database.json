@@ -1,11 +1,15 @@
 {
   "teams": [
     {
-      "name": "TestTeam",
       "id": 1,
-      "teamScore" : 0
+      "name": "This is your team",
+      "totalScore": ""
+    },
+    {
+      "id": 2,
+      "name": "Trunch Time",
+      "totalScore": ""
     }
-    
   ],
   "players": [
     {
@@ -25,6 +29,12 @@
       "name": "Kelsey",
       "country": "England",
       "teamId": 1
+    },
+    {
+      "name": "Becca",
+      "country": "USA",
+      "teamId": 2,
+      "id": 4
     }
   ]
 }

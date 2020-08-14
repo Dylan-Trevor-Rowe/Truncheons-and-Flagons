@@ -1,3 +1,7 @@
+import {playerForm} from "./player/createPlayerForm.js"
+
+playerForm()
+
 
 
 
