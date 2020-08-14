@@ -1,1 +1,5 @@
-console.log('hello world')
+
+
+import { TeamForm } from "./Forms/teamForm.js"
+
+TeamForm()
