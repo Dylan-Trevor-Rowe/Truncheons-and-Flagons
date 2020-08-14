@@ -8,7 +8,7 @@ const dispatchStateChangeEvent = () => {
 }
 
 export const usePlayers = () => {
-    return teams.slice()
+    return players.slice()
 }
 
 export const getPlayers = () => {
