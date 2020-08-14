@@ -12,8 +12,18 @@
     },
     {
       "name": "The Rolling Thunder",
-      "teamScore": 0,
+      "totalScore": 0,
       "id": 3
+    },
+    {
+      "name": "The Flaming Flagettes",
+      "totalScore": 0,
+      "id": 4
+    },
+    {
+      "name": "Hello World",
+      "totalScore": 0,
+      "id": 5
     }
   ],
   "players": [
@@ -40,6 +50,18 @@
       "country": "USA",
       "teamId": 2,
       "id": 4
+    },
+    {
+      "name": "Molly",
+      "country": "India",
+      "teamId": 3,
+      "id": 5
+    },
+    {
+      "name": "Jane",
+      "country": "USA",
+      "teamId": 4,
+      "id": 6
     }
   ]
 }

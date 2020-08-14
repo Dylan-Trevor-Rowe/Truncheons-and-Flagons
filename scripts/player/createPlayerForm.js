@@ -5,13 +5,11 @@ import { getTeams, useTeams } from "../team/teamProvider.js"
 const contentTarget = document.querySelector(".createPlayer")
 const eventHub = document.querySelector(".container")
 
-let teamsNeedingPlayers =[]
 
-eventHub.addEventListener("teamStateChanged", event => {
+eventHub.addEventListener("teamStateChanged", () => {
         const teams = useTeams()
         const players= usePlayers()
         findTeamsWithLessThanThreePlayers(players, teams)
-        render(teamsNeedingPlayers)
 
 })
 
@@ -67,8 +65,7 @@ const findTeamsWithLessThanThreePlayers = (players, teams) => {
             return team
         }
     })
-    teamsNeedingPlayers = foundTeams
-    render(teamsNeedingPlayers)
+    render(foundTeams)
 }
 
 export const playerForm = () => {
