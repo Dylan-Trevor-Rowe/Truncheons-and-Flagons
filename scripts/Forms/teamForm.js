@@ -12,7 +12,7 @@ eventHub.addEventListener("click", clickEvent => {
 
         const newTeam = {
             name : teamName.value,
-            teamScore : 0,
+            totalScore : 0,
             
         }
 
