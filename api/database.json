@@ -34,6 +34,11 @@
       "name": "Bears",
       "totalScore": 0,
       "id": 7
+    },
+    {
+      "name": "The Best Team",
+      "totalScore": 0,
+      "id": 8
     }
   ],
   "players": [
@@ -72,6 +77,12 @@
       "country": "USA",
       "teamId": 4,
       "id": 6
+    },
+    {
+      "name": "Samwise",
+      "country": "USA",
+      "teamId": 8,
+      "id": 7
     }
   ]
 }

@@ -1,4 +1,6 @@
 
+
+
 const eventHub = document.querySelector('.container')
 
 const contentTarget = document.querySelector('.landingPage');
@@ -11,8 +13,8 @@ export const landingButton = () => {
         <image id="truncheon" src="scripts/images/truncheons and flags.png">
         </div>
         
-        
         `
+        
         
         
 }

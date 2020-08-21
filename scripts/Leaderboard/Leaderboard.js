@@ -48,5 +48,25 @@ const render = () => {
             return toDOM
         }
     ).join("")
-    contentTarget.innerHTML = html
+    contentTarget.innerHTML = `
+        <h3>Leaderboard</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope='col'>Team Name</th>
+                    <th scpoe='col'>Total Score</th>
+                    <th scope='col'>Players</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            ${html}
+            </tbody>
+        </table>    
+     `
 }
+
+
+
+
+

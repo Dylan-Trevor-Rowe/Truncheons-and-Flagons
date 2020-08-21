@@ -1,8 +1,13 @@
 export const LeaderBoardHTML = (team) => {
     return `
-        <div class="teamName">Name: ${team.name}</div>
-        <div class="teamScore">Total Score: ${team.totalScore}</div>
-        <div class="totalPlayer">Players: ${team.playerCount}</div>
+        <tr>
+            <th scope="row">${team.name}</th>
+                <td>${team.totalScore}</td>
+                <td>${team.playerCount}</td>
+        </tr>
+    
+    
+        
         
         
         
@@ -10,4 +15,3 @@ export const LeaderBoardHTML = (team) => {
     `
 }
 
-//<div class="totalPlayers">${players.total}</div>
