@@ -24,6 +24,16 @@
       "name": "Hello World",
       "totalScore": 0,
       "id": 5
+    },
+    {
+      "name": "Lions",
+      "totalScore": 0,
+      "id": 6
+    },
+    {
+      "name": "Bears",
+      "totalScore": 0,
+      "id": 7
     }
   ],
   "players": [

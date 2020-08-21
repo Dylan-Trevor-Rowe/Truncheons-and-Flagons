@@ -5,6 +5,14 @@ import {LeaderBoardHTML} from "./LeaderBoardHTMLCon.js"
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".mainLeaderBoard")
 
+eventHub.addEventListener("teamStateChanged", () => {
+    LeaderBoard()
+})
+
+eventHub.addEventListener("playerStateChanged", () => {
+    LeaderBoard()
+})
+
 
 
 let teams = []
@@ -21,21 +29,24 @@ export const LeaderBoard = () => {
         })
 }
 
-// const render = () => {
-//     contentTarget.innerHTML = players.map(
-//         player => {
-//             const matchedTeam = teams.find(team => team.id === player.teamId)
-//             const html = LeaderBoardHTML(matchedTeam, player)
-//             return html
-//         }
-//     ).join("")
-// }
+
+
 
 const render = () => {
-    contentTarget.innerHTML = teams.map(team => 
-        `${
-            LeaderBoardHTML(team)
-        }`
-        ).join("")
+    const html = teams.map(
+        team => {
+            const thePlayers = players.filter(player => {
+                return player.teamId === team.id
+            })
+                const playerCount = thePlayers.length
+                team.playerCount = playerCount 
+                //added to team object
+                //gives the number of players in each
+                //array to the populate on the dom
+            
+            const toDOM = LeaderBoardHTML(team)
+            return toDOM
+        }
+    ).join("")
+    contentTarget.innerHTML = html
 }
-//
