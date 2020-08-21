@@ -3,21 +3,21 @@
     {
       "id": 1,
       "name": "This is your team",
-      "totalScore": ""
+      "totalScore": 1
     },
     {
       "id": 2,
       "name": "Trunch Time",
-      "totalScore": ""
+      "totalScore": 0
     },
     {
       "name": "The Rolling Thunder",
-      "totalScore": 0,
+      "totalScore": 2,
       "id": 3
     },
     {
       "name": "The Flaming Flagettes",
-      "totalScore": 0,
+      "totalScore": 10,
       "id": 4
     },
     {

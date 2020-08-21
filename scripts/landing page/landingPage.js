@@ -1,5 +1,4 @@
 
-
 const eventHub = document.querySelector('.container')
 
 const contentTarget = document.querySelector('.landingPage');
@@ -10,7 +9,12 @@ export const landingButton = () => {
         `<div>
         <button id="landingButton"class="landingButton">Truncheons & Flagons</button>
         <image id="truncheon" src="scripts/images/truncheons and flags.png">
-        </div>`
+        </div>
+        
+        
+        `
+        
+        
 }
 
 export const leaveThePage = () => {
