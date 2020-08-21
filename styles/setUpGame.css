@@ -1,0 +1,12 @@
+.setupGameTop {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    padding: 75px 0;
+  }
+  
+  .createPlayer {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+  }
