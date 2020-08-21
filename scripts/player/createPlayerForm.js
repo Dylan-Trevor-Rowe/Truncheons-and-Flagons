@@ -91,6 +91,6 @@ export const playerForm = () => {
     .then(() => {
         teams = useTeams()
         players= usePlayers()
-        findTeamsWithLessThanThreePlayers(players, teams)
+        findTeamsWithLessThanThreePlayers()
     })
 }
