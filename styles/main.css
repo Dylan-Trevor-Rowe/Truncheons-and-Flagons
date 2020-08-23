@@ -6,3 +6,13 @@ body {
   font-family: fantasy, papyrus;
 }
 
+#teamButton {
+  margin: 15px;
+}
+
+.team__Container {
+ width: 300px;
+  border: solid black 2px;
+  margin: 15px;
+  padding: 15px;
+}

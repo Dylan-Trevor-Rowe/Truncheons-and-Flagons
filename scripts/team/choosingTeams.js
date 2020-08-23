@@ -1,6 +1,4 @@
 import { getTeams, useTeams } from "./teamProvider.js";
-import { teamConverter } from './team.js'
-
 
 const eventHub = document.querySelector(".container")
 
@@ -14,34 +12,6 @@ eventHub.addEventListener("playerStateChanged", () => {
     teamsPlayingSelectsOne(teams)
 })
 
-
-
-
-
-
-// eventHub.addEventListener('change', (changeEvent) => {
-
-    
-
-//     if (changeEvent.target.id === 'unoSelect' || 'dosSelect' || 'tresSelect') {
-
-
-//         const customEvent = new CustomEvent("teamSelected", {
-//             detail: {
-//                 teamId: changeEvent.target.value
-//             }
-//         })
-    
-//         eventHub.dispatchEvent(customEvent)
-        
-//     }
-
-// }
-// )
-
-
-
-
 export const teamList = () => {
     getTeams()
         .then(() => {
@@ -50,12 +20,6 @@ export const teamList = () => {
            
         })
 }
-
-
-
-
-
-
 
 export const teamsPlayingSelects = (teamNames) => {
     contentTargetTwo.innerHTML = `

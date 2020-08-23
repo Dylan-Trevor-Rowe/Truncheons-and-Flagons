@@ -1,6 +1,6 @@
 import { getTeams, useTeams } from "./teamProvider.js";
 import { teamConverter } from "./team.js";
-// import { teamList } from "./choosingTeams.js";
+
 
 
 const eventHub = document.querySelector('.container')
@@ -40,14 +40,8 @@ console.log(parsedTeams, parsedTeamsTwo, parsedTeamsThree)
        
       const arrayOfVal = [foundTeamObject, foundTeamObjectTwo, foundTeamObjectThree]
        render(arrayOfVal)
-    }
-   
-
-
- 
-
+        }
     })
-    
 }
 
 export const render = (Arr) => {
