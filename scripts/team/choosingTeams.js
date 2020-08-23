@@ -1,10 +1,16 @@
 import { getTeams, useTeams } from "./teamProvider.js";
+import { teamConverter } from './team.js'
+
 
 const eventHub = document.querySelector(".container")
 
+const contentTargetTwo = document.querySelector('.teamSelection')
 
 eventHub.addEventListener("teamStateChanged", () => {
-    const teams = useTeams()
+    teamsPlayingSelectsOne(teams)
+})
+
+eventHub.addEventListener("playerStateChanged", () => {
     teamsPlayingSelectsOne(teams)
 })
 
@@ -12,51 +18,26 @@ eventHub.addEventListener("teamStateChanged", () => {
 
 
 
-eventHub.addEventListener('click', (event) => {
-    const teamChanges = document.querySelector('.selectOne')
-    const teamchangesTwo = document.querySelector('.selectTwo')
-    const teamchangesThree = document.querySelector('.selectThree')
 
-    const parsedTeams = parseInt(teamChanges.value)
-    const parsedTeamsTwo = parseInt(teamchangesTwo.value)
-    const parsedTeamsThree = parseInt(teamchangesThree.value)
-
-    if ( parsedTeams !== 0 && parsedTeamsTwo.value !== 0 && parsedTeamsThree.value !== 0 && event.target.id === "teamButton" ) {
-        console.log('this also works')
-        const customEvent = new CustomEvent("teamSelectedTwo", {
-            detail: {
-                teamOne: 'name',
-                teamtwo: 'name',
-                teamThree: 'name'
-            }
-        })
-
-        eventHub.dispatchEvent(customEvent)
-    } 
-
-
-})
-
-
-
-eventHub.addEventListener('change', (changeEvent) => {
+// eventHub.addEventListener('change', (changeEvent) => {
 
     
 
-    if (changeEvent.target.id === 'unoSelect' || 'dosSelect' || 'tresSelect') {
-console.log('it works')
+//     if (changeEvent.target.id === 'unoSelect' || 'dosSelect' || 'tresSelect') {
 
-        const customEvent = new CustomEvent("teamSelected", {
-            detail: {
-                teamId: changeEvent.target.value
-            }
-        })
 
-        eventHub.dispatchEvent(customEvent)
-    }
+//         const customEvent = new CustomEvent("teamSelected", {
+//             detail: {
+//                 teamId: changeEvent.target.value
+//             }
+//         })
+    
+//         eventHub.dispatchEvent(customEvent)
+        
+//     }
 
-}
-)
+// }
+// )
 
 
 
@@ -66,17 +47,22 @@ export const teamList = () => {
         .then(() => {
             const allteams = useTeams()
             teamsPlayingSelects(allteams)
+           
         })
 }
 
 
 
-export const teamsPlayingSelects = (teams) => {
-    return `
+
+
+
+
+export const teamsPlayingSelects = (teamNames) => {
+    contentTargetTwo.innerHTML = `
 <select id="unoSelect" class="selectOne">
 <option value="0"></option>
 ${
-        teams.map(teams => {
+      teamNames.map(teams => {
             return `<option value="${teams.id}"> ${teams.name}</option>`;
         }).join('')
         }    
@@ -85,7 +71,7 @@ ${
  <select id="dosSelect" class='selectTwo'>
  <option value="0"></option>
  ${
-        teams.map(teams => {
+    teamNames.map(teams => {
             return `<option value="${teams.id}"> ${teams.name}</option>`;
         }).join('')
         }    
@@ -94,7 +80,7 @@ ${
 <select id="tresSelect" class='selectThree'>
 <option value="0"></option>
 ${
-        teams.map(teams => `<option value="${teams.id}"> ${teams.name}</option>`).join('')
+    teamNames.map(teams => `<option value="${teams.id}"> ${teams.name}</option>`).join('')
         }    
 </select>
 <div>
