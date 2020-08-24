@@ -23,7 +23,7 @@ export const leaveThePage = () => {
     eventHub.addEventListener('click', e => {
         if (e.target.id === 'landingButton') {
            
-
+            
             contentTarget.remove()
 
             const LandingPageStart = new CustomEvent('landingPageStart', {
