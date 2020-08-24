@@ -3,18 +3,30 @@
     {
       "id": 1,
       "name": "This is your team",
+<<<<<<< HEAD
       "totalScore": 13,
+=======
+      "totalScore": 7,
+>>>>>>> master
       "playerCount": 3
     },
     {
       "id": 2,
       "name": "Trunch Time",
+<<<<<<< HEAD
       "totalScore": 4,
+=======
+      "totalScore": 5,
+>>>>>>> master
       "playerCount": 1
     },
     {
       "name": "The Rolling Thunder",
+<<<<<<< HEAD
       "totalScore": 8,
+=======
+      "totalScore": 9,
+>>>>>>> master
       "id": 3,
       "playerCount": 1
     },

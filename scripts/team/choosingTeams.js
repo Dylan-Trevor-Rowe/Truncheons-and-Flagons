@@ -1,12 +1,15 @@
 import { getTeams, useTeams } from "./teamProvider.js";
+import { getPlayers, usePlayers } from "../player/playerProvider.js";
 
 const eventHub = document.querySelector(".container")
 
 const contentTargetTwo = document.querySelector('.teamSelection')
 let teams = []
+let players = []
 
 eventHub.addEventListener("teamStateChanged", () => {
     teams = useTeams()
+    teamsWithPlayers()
     teamsPlayingSelects()
 })
 
@@ -17,11 +20,24 @@ eventHub.addEventListener("playerStateChanged", () => {
 
 export const teamList = () => {
     getTeams()
+    .then(getPlayers)
         .then(() => {
+           players = usePlayers()
            teams = useTeams()
+           teamsWithPlayers()
             teamsPlayingSelects()
            
         })
+}
+
+const teamsWithPlayers = () => {
+    teams = teams.filter(team => {
+        let correspondingPlayers = players.filter(player => player.teamId === team.id)
+        if (correspondingPlayers.length === 3){
+            return team
+        }
+
+    })
 }
 
 export const teamsPlayingSelects = () => {
