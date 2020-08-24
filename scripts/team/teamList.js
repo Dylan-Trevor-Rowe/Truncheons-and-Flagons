@@ -47,7 +47,7 @@ export const clickMe = () => {
            }
 
        })
-      
+       console.log(arrayOfValues)
        dispatchEvent(arrayOfValues)
     }
     })
