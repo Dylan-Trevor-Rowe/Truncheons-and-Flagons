@@ -42,7 +42,7 @@ eventHub.addEventListener("click", clickEvent => {
 
 const render = () => {
     contentTarget.innerHTML = `
-        <h3>Create a New Team</h3>
+        <h3>Create A New Team</h3>
         <div name="teamCreationForm id="teamCreation>
             <input type="text" id="teamName" placeholder="Team Name" />
             <button id="createTeam">Create Team</button>
