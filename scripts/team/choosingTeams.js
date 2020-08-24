@@ -25,11 +25,15 @@ export const teamList = () => {
 }
 
 export const teamsPlayingSelects = () => {
-    contentTargetTwo.innerHTML = `
+    
+    contentTargetTwo.innerHTML = 
+    
+    `
 <select id="unoSelect" class="selectOne">
 <option value="0"></option>
 ${
       teams.map(team => {
+          
             return `<option value="${team.id}"> ${team.name}</option>`;
         }).join('')
         }    
