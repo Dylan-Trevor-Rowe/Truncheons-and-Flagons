@@ -33,3 +33,15 @@ export const saveTeam = (team) => {
     .then(getTeams)
     .then(dispatchTeamChange)
 }
+export const updateTotalScore = (teamObject) => {
+    return fetch(`http://localhost:3000/teams/${teamObject.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(teamObject)
+    })
+    .then(getTeams)
+    .then(dispatchTeamChange)
+
+}
