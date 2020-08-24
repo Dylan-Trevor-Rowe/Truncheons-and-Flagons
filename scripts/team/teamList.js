@@ -49,6 +49,10 @@ export const clickMe = () => {
            }
 
        })
+
+       arrayOfValues.filter(value => {
+           return arrayOfValues.id ==! value.id
+       })
        console.log(arrayOfValues)
        dispatchEvent(arrayOfValues)
     }

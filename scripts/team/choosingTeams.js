@@ -26,8 +26,8 @@ export const teamList = () => {
 
 export const teamsPlayingSelects = () => {
     contentTargetTwo.innerHTML = `
-<select id="unoSelect" class="selectOne">
-<option value="0"></option>
+<select id="unoSelect" placeholder="select a team" class="selectOne">
+<option value="0">choose a team</option>
 ${
       teams.map(team => {
             return `<option value="${team.id}"> ${team.name}</option>`;
@@ -35,8 +35,8 @@ ${
         }    
 </select >
 
- <select id="dosSelect" class='selectTwo'>
- <option value="0"></option>
+ <select id="dosSelect"  class='selectTwo'>
+ <option value="0">choose a team</option>
  ${
     teams.map(team => {
             return `<option value="${team.id}"> ${team.name}</option>`;
@@ -44,8 +44,8 @@ ${
         }    
 </select>
 
-<select id="tresSelect" class='selectThree'>
-<option value="0"></option>
+<select id="tresSelect"  class='selectThree'>
+<option value="0">choose a team</option>
 ${
     teams.map(team => `<option value="${team.id}"> ${team.name}</option>`).join('')
         }    
