@@ -3,30 +3,18 @@
     {
       "id": 1,
       "name": "This is your team",
-<<<<<<< HEAD
-      "totalScore": 13,
-=======
       "totalScore": 7,
->>>>>>> master
       "playerCount": 3
     },
     {
       "id": 2,
       "name": "Trunch Time",
-<<<<<<< HEAD
-      "totalScore": 4,
-=======
       "totalScore": 5,
->>>>>>> master
       "playerCount": 1
     },
     {
       "name": "The Rolling Thunder",
-<<<<<<< HEAD
-      "totalScore": 8,
-=======
       "totalScore": 9,
->>>>>>> master
       "id": 3,
       "playerCount": 1
     },
@@ -37,8 +25,9 @@
     },
     {
       "name": "Hello World",
-      "totalScore": 0,
-      "id": 5
+      "totalScore": 3,
+      "id": 5,
+      "playerCount": 1
     },
     {
       "name": "Lions",
@@ -53,25 +42,11 @@
     },
     {
       "name": "The Best Team",
-      "totalScore": 0,
-      "id": 8
-    },
-    {
-      "name": "This Team",
-      "totalScore": 0,
-      "id": 9
-    },
-    {
-      "name": "Bobs",
-      "totalScore": 1,
-      "id": 10,
-      "playerCount": 0
-    },
-    {
-      "name": "Rings",
-      "totalScore": 0,
-      "id": 11
+      "totalScore": 3,
+      "id": 8,
+      "playerCount": 2
     }
+
   ],
   "players": [
     {
@@ -169,6 +144,18 @@
       "country": "USA",
       "teamId": 8,
       "id": 16
+    },
+    {
+      "name": "Dylan",
+      "country": "Space",
+      "teamId": 10,
+      "id": 17
+    },
+    {
+      "name": "Burt ",
+      "country": "Hungary",
+      "teamId": 9,
+      "id": 18
     }
   ]
 }
