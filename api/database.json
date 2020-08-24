@@ -3,17 +3,20 @@
     {
       "id": 1,
       "name": "This is your team",
-      "totalScore": 1
+      "totalScore": 31,
+      "playerCount": 3
     },
     {
       "id": 2,
       "name": "Trunch Time",
-      "totalScore": 0
+      "totalScore": 30,
+      "playerCount": 2
     },
     {
       "name": "The Rolling Thunder",
-      "totalScore": 2,
-      "id": 3
+      "totalScore": 32,
+      "id": 3,
+      "playerCount": 1
     },
     {
       "name": "The Flaming Flagettes",
