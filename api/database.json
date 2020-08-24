@@ -3,18 +3,30 @@
     {
       "id": 1,
       "name": "This is your team",
+<<<<<<< HEAD
+      "totalScore": 13,
+=======
       "totalScore": 7,
+>>>>>>> master
       "playerCount": 3
     },
     {
       "id": 2,
       "name": "Trunch Time",
+<<<<<<< HEAD
+      "totalScore": 4,
+=======
       "totalScore": 5,
+>>>>>>> master
       "playerCount": 1
     },
     {
       "name": "The Rolling Thunder",
+<<<<<<< HEAD
+      "totalScore": 8,
+=======
       "totalScore": 9,
+>>>>>>> master
       "id": 3,
       "playerCount": 1
     },
@@ -35,8 +47,9 @@
     },
     {
       "name": "Bears",
-      "totalScore": 0,
-      "id": 7
+      "totalScore": 4,
+      "id": 7,
+      "playerCount": 3
     },
     {
       "name": "The Best Team",
@@ -47,6 +60,17 @@
       "name": "This Team",
       "totalScore": 0,
       "id": 9
+    },
+    {
+      "name": "Bobs",
+      "totalScore": 1,
+      "id": 10,
+      "playerCount": 0
+    },
+    {
+      "name": "Rings",
+      "totalScore": 0,
+      "id": 11
     }
   ],
   "players": [
