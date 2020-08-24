@@ -15,5 +15,5 @@ import { clickMe } from "./team/teamList.js"
  landingButton();
  leaveThePage();
  LeaderBoard()
-teamList()
-clickMe()
+    teamList()
+    clickMe()

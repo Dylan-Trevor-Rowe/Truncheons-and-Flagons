@@ -19,10 +19,10 @@ export const clickMe = () => {
         const parsedTeamsTwo = parseInt(teamchangesTwo.value)
         const parsedTeamsThree = parseInt(teamchangesThree.value)
 
-console.log(parsedTeams, parsedTeamsTwo, parsedTeamsThree)
+
         
     if ( event.target.id === "teamButton" && parsedTeams !== 0 && parsedTeamsTwo !== 0 && parsedTeamsThree !== 0 ) {
-           console.log(event.target.id)
+
     
         const arrayOfTeams = useTeams();
         const foundTeamObject = arrayOfTeams.find((teams) => {
@@ -40,7 +40,16 @@ console.log(parsedTeams, parsedTeamsTwo, parsedTeamsThree)
        
       const arrayOfVal = [foundTeamObject, foundTeamObjectTwo, foundTeamObjectThree]
        render(arrayOfVal)
-        }
+
+      const arrayOfValues = new CustomEvent('arrayOfValues', {
+           detail: {
+            arrayOfVal: arrayOfVal
+           }
+
+       })
+      
+       dispatchEvent(arrayOfValues)
+    }
     })
 }
 
