@@ -3,18 +3,18 @@
     {
       "id": 1,
       "name": "This is your team",
-      "totalScore": 31,
+      "totalScore": 4,
       "playerCount": 3
     },
     {
       "id": 2,
       "name": "Trunch Time",
-      "totalScore": 30,
-      "playerCount": 2
+      "totalScore": 2,
+      "playerCount": 1
     },
     {
       "name": "The Rolling Thunder",
-      "totalScore": 32,
+      "totalScore": 6,
       "id": 3,
       "playerCount": 1
     },
@@ -42,6 +42,11 @@
       "name": "The Best Team",
       "totalScore": 0,
       "id": 8
+    },
+    {
+      "name": "This Team",
+      "totalScore": 0,
+      "id": 9
     }
   ],
   "players": [
@@ -88,16 +93,58 @@
       "id": 7
     },
     {
-      "name": "dad",
-      "country": "spain",
-      "teamId": 2,
+      "name": "Bob",
+      "country": "Law",
+      "teamId": 7,
       "id": 8
     },
     {
-      "name": "ZZZ",
-      "country": "ZZ",
-      "teamId": 0,
+      "name": "Bob",
+      "country": "law",
+      "teamId": 5,
       "id": 9
+    },
+    {
+      "name": "a",
+      "country": "spain",
+      "teamId": 7,
+      "id": 10
+    },
+    {
+      "name": "a",
+      "country": "spain",
+      "teamId": 7,
+      "id": 11
+    },
+    {
+      "name": "Al",
+      "country": "greenland",
+      "teamId": 6,
+      "id": 12
+    },
+    {
+      "name": "Al",
+      "country": "greenland",
+      "teamId": 6,
+      "id": 13
+    },
+    {
+      "name": "Al",
+      "country": "greenland",
+      "teamId": 6,
+      "id": 14
+    },
+    {
+      "name": "George S",
+      "country": "USA",
+      "teamId": 9,
+      "id": 15
+    },
+    {
+      "name": "Joe",
+      "country": "USA",
+      "teamId": 8,
+      "id": 16
     }
   ]
 }
