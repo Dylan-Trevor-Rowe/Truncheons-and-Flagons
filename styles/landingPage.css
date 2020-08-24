@@ -1,8 +1,9 @@
+
 .landingPage {
     background: rgb(67, 136, 67);
     border: solid 2px black;
-    width: 1253px;
-    height: 1200px;
+    /* width: 1253px;
+    height: 1200px; */
     opacity: 80%;
   }
   
@@ -15,3 +16,15 @@
   #truncheon {
     margin-left: 460px;
   }
+
+  .landingContainer {
+    background: rgb(67, 136, 67);
+    margin:0;
+    width: 1253px;
+    height: 1200px;
+    opacity: 80%;
+  }
+
+
+
+
