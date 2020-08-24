@@ -1,10 +1,12 @@
 import { getTeams, useTeams } from "./teamProvider.js";
 import { teamConverter } from "./team.js";
+import { roundScore } from "../score/scoreForm.js";
 
 
 
 const eventHub = document.querySelector('.container')
 const contentTarget = document.querySelector('.selectedTeams')
+const contentTargetTwo = document.querySelector('.selectedTeamsGame')
 
 
 
@@ -54,7 +56,8 @@ export const clickMe = () => {
 }
 
 export const render = (Arr) => {
-contentTarget.innerHTML = teamConverter(Arr)
+contentTarget.innerHTML = teamConverter(Arr) 
+contentTargetTwo.innerHTML = roundScore(1)
     
 }
 

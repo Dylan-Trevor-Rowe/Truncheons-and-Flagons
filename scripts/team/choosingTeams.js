@@ -3,31 +3,34 @@ import { getTeams, useTeams } from "./teamProvider.js";
 const eventHub = document.querySelector(".container")
 
 const contentTargetTwo = document.querySelector('.teamSelection')
+let teams = []
 
 eventHub.addEventListener("teamStateChanged", () => {
-    teamsPlayingSelectsOne(teams)
+    teams = useTeams()
+    teamsPlayingSelects()
 })
 
 eventHub.addEventListener("playerStateChanged", () => {
-    teamsPlayingSelectsOne(teams)
+    teamsPlayingSelects()
 })
+
 
 export const teamList = () => {
     getTeams()
         .then(() => {
-            const allteams = useTeams()
-            teamsPlayingSelects(allteams)
+           teams = useTeams()
+            teamsPlayingSelects()
            
         })
 }
 
-export const teamsPlayingSelects = (teamNames) => {
+export const teamsPlayingSelects = () => {
     contentTargetTwo.innerHTML = `
 <select id="unoSelect" class="selectOne">
 <option value="0"></option>
 ${
-      teamNames.map(teams => {
-            return `<option value="${teams.id}"> ${teams.name}</option>`;
+      teams.map(team => {
+            return `<option value="${team.id}"> ${team.name}</option>`;
         }).join('')
         }    
 </select >
@@ -35,8 +38,8 @@ ${
  <select id="dosSelect" class='selectTwo'>
  <option value="0"></option>
  ${
-    teamNames.map(teams => {
-            return `<option value="${teams.id}"> ${teams.name}</option>`;
+    teams.map(team => {
+            return `<option value="${team.id}"> ${team.name}</option>`;
         }).join('')
         }    
 </select>
@@ -44,7 +47,7 @@ ${
 <select id="tresSelect" class='selectThree'>
 <option value="0"></option>
 ${
-    teamNames.map(teams => `<option value="${teams.id}"> ${teams.name}</option>`).join('')
+    teams.map(team => `<option value="${team.id}"> ${team.name}</option>`).join('')
         }    
 </select>
 <div>
