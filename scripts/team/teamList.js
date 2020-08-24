@@ -39,22 +39,34 @@ export const clickMe = () => {
         const foundTeamObjectThree = arrayOfTeams.find((teams) => {
          return   parsedTeamsThree  === teams.id
          })
+         
        
       const arrayOfVal = [foundTeamObject, foundTeamObjectTwo, foundTeamObjectThree]
-       render(arrayOfVal)
+      
+      let duplicates = false
+      arrayOfVal.forEach(value => {
+          const numberOfInstances = arrayOfVal.filter(v => value === v)
+          if(numberOfInstances.length > 1){
+              duplicates = true
+            }
+        })
+        
+        if(duplicates){
+            window.alert("please choose three different teams to play")
+            
+      }else{
 
-      const arrayOfValues = new CustomEvent('arrayOfValues', {
-           detail: {
-            arrayOfVal: arrayOfVal
-           }
+          render(arrayOfVal)
+   
+         const arrayOfValues = new CustomEvent('arrayOfValues', {
+              detail: {
+               arrayOfVal: arrayOfVal
+              }
+   
+          })
+          dispatchEvent(arrayOfValues)
 
-       })
-
-       arrayOfValues.filter(value => {
-           return arrayOfValues.id ==! value.id
-       })
-       console.log(arrayOfValues)
-       dispatchEvent(arrayOfValues)
+      }
     }
     })
 }

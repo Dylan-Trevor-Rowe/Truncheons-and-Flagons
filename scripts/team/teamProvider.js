@@ -8,7 +8,13 @@ const dispatchTeamChange = () => {
 }
 
 export const useTeams = () => {
-    return teams.slice()
+    const sortedByScore = teams.sort(
+        (a,b) =>{
+            return b.totalScore - a.totalScore
+        }
+        
+    )
+    return sortedByScore.slice()
 }
 
 export const getTeams = () => {

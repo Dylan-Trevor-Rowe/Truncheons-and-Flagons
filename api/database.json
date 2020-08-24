@@ -3,13 +3,13 @@
     {
       "id": 1,
       "name": "This is your team",
-      "totalScore": 4,
+      "totalScore": 7,
       "playerCount": 3
     },
     {
       "id": 2,
       "name": "Trunch Time",
-      "totalScore": 2,
+      "totalScore": 5,
       "playerCount": 1
     },
     {
@@ -36,30 +36,17 @@
     },
     {
       "name": "Bears",
-      "totalScore": 0,
-      "id": 7
+      "totalScore": 4,
+      "id": 7,
+      "playerCount": 3
     },
     {
       "name": "The Best Team",
       "totalScore": 3,
       "id": 8,
       "playerCount": 2
-    },
-    {
-      "name": "This Team",
-      "totalScore": 0,
-      "id": 9
-    },
-    {
-      "name": "papasmurfs",
-      "totalScore": 0,
-      "id": 10
-    },
-    {
-      "name": "grandpas",
-      "totalScore": 0,
-      "id": 11
     }
+
   ],
   "players": [
     {
